@@ -10,7 +10,7 @@
         <tr>
             <td>
 
-                <asp:Label ID="lbl_Name" runat="server" Text="NAME : " ></asp:Label>
+                <asp:Label ID="lbl_Name" runat="server" Text="NAME : "></asp:Label>
             </td>
             <td>
 
@@ -85,13 +85,29 @@
                 <asp:Label ID="lbl_Image" runat="server" Text="Image : "></asp:Label>
             </td>
             <td>
-                <asp:FileUpload ID="ful_Img" runat="server"/>
-                <input id="btnUpload" type="button" value="Upload" runat="server"  onserverclick="btnUpload_ServerClick"/>
+                <asp:FileUpload ID="ful_Img" runat="server" />
+                <input id="btnUpload" type="button" value="Upload" runat="server" onserverclick="btnUpload_ServerClick" />
             </td>
         </tr>
     </table>
+    
 
-    <asp:Button ID="btn_Submit" runat="server" Text="SUBMIT"  OnClick="btn_Submit_Click"/>
+    <div class="form-group">
+
+        <lable for="exampleInputName">NAME : </lable>
+        <input type="text" class="form-control" id="exampleInputName" placeholder="NAME"/>
+
+    </div>
+
+
+
+
+    <br />
+
+
+
+    <%-- <asp:Button ID="btn_Submit" runat="server" Text="SUBMIT"  OnClick="btn_Submit_Click"/>--%>
+    <input class="btn btn-default" id="btn_Submit" type="submit" value="SUBMIT" onclick="btn_Submit_Click" />
 
 
 </asp:Content>

@@ -53,7 +53,7 @@ namespace WEBTest
                         
             try{           
             UserN objCourse = new UserN();
-            objCourse.Name = txt_Name.Text;
+            objCourse.Name = txt_Name.Text;  
             objCourse.Email = txt_Email.Text;
             objCourse.Telephon = txt_Tel.Text;
             objCourse.Team_id = ddl_City.Text.FirstOrDefault();

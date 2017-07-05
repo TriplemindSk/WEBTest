@@ -92,16 +92,6 @@
     </table>
     
 
-    <div class="form-group">
-
-        <lable for="exampleInputName">NAME : </lable>
-        <input type="text" class="form-control" id="exampleInputName" placeholder="NAME"/>
-
-    </div>
-
-
-
-
     <br />
 
 

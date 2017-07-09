@@ -47,9 +47,9 @@
                 <asp:Label ID="lbl_City" runat="server" Text="City : "></asp:Label>
             </td>
             <td>
-                <asp:DropDownList ID="ddl_City" runat="server" Width="500px" DataSourceID="SqlDataSourceCity" DataTextField="CityName" DataValueField="CityName"></asp:DropDownList>
-                <asp:SqlDataSource ID="SqlDataSourceCity" runat="server" ConnectionString="<%$ ConnectionStrings:TESTConnectionString %>" SelectCommand="SELECT * FROM [City] ORDER BY [CityName]"></asp:SqlDataSource>
-            </td>
+                <asp:DropDownList ID="ddl_City" runat="server" Width="500px" DataTextField="CityName" DataValueField="CityName"></asp:DropDownList>
+                <%--<asp:SqlDataSource ID="SqlDataSourceCity" runat="server" ConnectionString="<%$ ConnectionStrings:TESTConnectionString %>" SelectCommand="SELECT * FROM [City] ORDER BY [CityName]"></asp:SqlDataSource>
+            --%></td>
         </tr>
 
         <tr>
@@ -59,9 +59,9 @@
                 <asp:Label ID="lbl_Position" runat="server" Text="Position : "></asp:Label>
             </td>
             <td>
-                <asp:DropDownList ID="ddl_Position" runat="server" Width="500px" DataSourceID="SqlDataSourcePosition" DataTextField="Position" DataValueField="Position"></asp:DropDownList>
-                <asp:SqlDataSource ID="SqlDataSourcePosition" runat="server" ConnectionString="<%$ ConnectionStrings:TESTConnectionString %>" SelectCommand="SELECT * FROM [Position]"></asp:SqlDataSource>
-            </td>
+                <asp:DropDownList ID="ddl_Position" runat="server" Width="500px" DataTextField="Position" DataValueField="Position"></asp:DropDownList>
+                <%--<asp:SqlDataSource ID="SqlDataSourcePosition" runat="server" ConnectionString="<%$ ConnectionStrings:TESTConnectionString %>" SelectCommand="SELECT * FROM [Position]"></asp:SqlDataSource>
+           --%> </td>
         </tr>
 
         <tr>
@@ -71,9 +71,9 @@
                 <asp:Label ID="lbl_Team" runat="server" Text="Team : "></asp:Label>
             </td>
             <td>
-                <asp:DropDownList ID="ddl_Team" runat="server" Width="500px" DataSourceID="SqlDataSourceTeam" DataTextField="TeamName" DataValueField="TeamName"></asp:DropDownList>
+                <asp:DropDownList ID="ddl_Team" runat="server" Width="500px" DataTextField="TeamName" DataValueField="TeamName"></asp:DropDownList>
 
-                <asp:SqlDataSource ID="SqlDataSourceTeam" runat="server" ConnectionString="<%$ ConnectionStrings:TESTConnectionString %>" SelectCommand="SELECT * FROM [Team]"></asp:SqlDataSource>
+                <%--<asp:SqlDataSource ID="SqlDataSourceTeam" runat="server" ConnectionString="<%$ ConnectionStrings:TESTConnectionString %>" SelectCommand="SELECT * FROM [Team]"></asp:SqlDataSource>--%>
 
             </td>
         </tr>

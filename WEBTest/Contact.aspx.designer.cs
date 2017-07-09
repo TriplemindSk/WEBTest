@@ -94,15 +94,6 @@ namespace WEBTest {
         protected global::System.Web.UI.WebControls.DropDownList ddl_City;
         
         /// <summary>
-        /// SqlDataSourceCity control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceCity;
-        
-        /// <summary>
         /// lbl_Position control.
         /// </summary>
         /// <remarks>
@@ -121,15 +112,6 @@ namespace WEBTest {
         protected global::System.Web.UI.WebControls.DropDownList ddl_Position;
         
         /// <summary>
-        /// SqlDataSourcePosition control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourcePosition;
-        
-        /// <summary>
         /// lbl_Team control.
         /// </summary>
         /// <remarks>
@@ -146,15 +128,6 @@ namespace WEBTest {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddl_Team;
-        
-        /// <summary>
-        /// SqlDataSourceTeam control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceTeam;
         
         /// <summary>
         /// lbl_Image control.

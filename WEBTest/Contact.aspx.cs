@@ -14,17 +14,23 @@ namespace WEBTest
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            getCity();
+            getPosition();
+            getTeam();
 
-           
+
         }
-
-        
+                
         public void getCity() {
             DBtestWEBDataContext ctx = new DBtestWEBDataContext();
             Table<City> Citys = ctx.GetTable<City>();
             
-            var qr = from d in ctx.GetTable<City>() select d;
-            
+            var sqlCity = (from rows in ctx.GetTable<City>() orderby rows.CityName select new { rows.ID, rows.CityName }).ToList();
+
+            ddl_City.DataSource = sqlCity;
+            ddl_City.DataTextField = "CityName";
+            ddl_City.DataValueField = "CityName";
+            ddl_City.DataBind();
         }
 
 
@@ -33,23 +39,31 @@ namespace WEBTest
             DBtestWEBDataContext ctx = new DBtestWEBDataContext();
             Table<Team> Teams = ctx.GetTable<Team>();
 
-            var qrT= from dt in ctx.GetTable<Team>() select dt;
+            var sqlTeam = (from rows in ctx.GetTable<Team>() select new { rows.ID, rows.TeamName }).ToList();
+
+
+            ddl_Team.DataSource = sqlTeam;
+            ddl_Team.DataTextField = "TeamName";
+            ddl_Team.DataValueField = "TeamName";
+            ddl_Team.DataBind();
 
         }
-
 
         public void getPosition() {
             DBtestWEBDataContext ctx = new DBtestWEBDataContext();
             Table<Position> Positions = ctx.GetTable<Position>();
 
-            var qrP = from dp in ctx.GetTable<Position>() select dp;
+            var sqlPosition = (from rows in ctx.GetTable<Position>() select new { rows.ID, rows.Position1 }).ToList();
+
+            ddl_Position.DataSource = sqlPosition;
+            ddl_Position.DataTextField = "Position1";
+            ddl_Position.DataValueField = "Position1";
+            ddl_Position.DataBind();
         }
 
         public void AddData() {
 
             using (DBtestWEBDataContext ctx = new DBtestWEBDataContext())
-
-                                    
                         
             try{           
             UserN objCourse = new UserN();

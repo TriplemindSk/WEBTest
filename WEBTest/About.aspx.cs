@@ -74,85 +74,85 @@ namespace WEBTest
             this.SearchData();
         }
 
-        //protected void gv_Search_DataBound(object sender, EventArgs e)
-        //{
+    //    protected void gv_Search_DataBound(object sender, EventArgs e)
+    //    {
 
 
-        //    if (e.Row.RowType == DataControlRowType.DataRow)
-        //    {
-        //        e.Row.Cells[6].Text = Regex.Replace(e.Row.Cells[6].Text, txb_Search.Text.Trim(), delegate (Match match)
-        //        {
-        //            return string.Format("<span style = 'background-color:#D9EDF7'>{6}</span>", match.Value);
-        //        }, RegexOptions.IgnoreCase);
-        //    }
-            
-            
-        //}
+    //        if (e.Row.RowType == DataControlRowType.DataRow)
+    //        {
+    //            e.Row.Cells[6].Text = Regex.Replace(e.Row.Cells[6].Text, txb_Search.Text.Trim(), delegate (Match match)
+    //            {
+    //                return string.Format("<span style = 'background-color:#D9EDF7'>{6}</span>", match.Value);
+    //            }, RegexOptions.IgnoreCase);
+    //        }
 
 
-
-
-            //}
-
-            //protected void gv_Search_RowDeleting(object sender, GridViewDeleteEventArgs e)
-            //{
-
-            //    //int UserID = Convert.ToInt32(gv_Search.DataKeys[e.RowIndex].Values[0]);
-            //    //using (DBtestWEBDataContext ctx = new DBtestWEBDataContext())
-            //    //{
-            //    //    UserN objCourse = (from c in ctx.UserNs
-            //    //                       where c.U_ID == UserID
-            //    //                       select c).FirstOrDefault();
-            //    //    ctx.UserNs.DeleteOnSubmit(objCourse);
-            //    //    ctx.SubmitChanges();
-            //    //}
-            //    //this.SearchData();
+    //    }
 
 
 
 
-            //}
+    //}
 
-            //protected void gv_Search_RowEditing(object sender, GridViewEditEventArgs e)
-            //{
+    //protected void gv_Search_RowDeleting(object sender, GridViewDeleteEventArgs e)
+    //{
 
-            //    gv_Search.EditIndex = e.NewEditIndex;
-            //    this.SearchData();
+    //    int UserID = Convert.ToInt32(gv_Search.DataKeys[e.RowIndex].Values[0]);
+    //    using (DBtestWEBDataContext ctx = new DBtestWEBDataContext())
+    //    {
+    //        UserN objCourse = (from c in ctx.UserNs
+    //                           where c.U_ID == UserID
+    //                           select c).FirstOrDefault();
+    //        ctx.UserNs.DeleteOnSubmit(objCourse);
+    //        ctx.SubmitChanges();
+    //    }
+    //    this.SearchData();
 
 
 
-            //}
 
-            //protected void gv_Search_RowUpdating(object sender, GridViewUpdateEventArgs e)
-            //{
+    //}
 
-            //}
+    //protected void gv_Search_RowEditing(object sender, GridViewEditEventArgs e)
+    //{
 
-            //protected void gv_Search_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-            //{
-            //   gv_Search.EditIndex = -1;
-            //    this.SearchData();
+    //    gv_Search.EditIndex = e.NewEditIndex;
+    //    this.SearchData();
 
-            //}
 
-            ////protected void btnAdd_Click(object sender, EventArgs e)
-            ////{
-            ////    DBtestWEBDataContext ctx = new DBtestWEBDataContext();
 
-            ////    UserN objCourse = new UserN();
-            ////    objCourse.Name = txtName.Text;
-            ////    objCourse.Email = txtEmail.Text;
-            ////    objCourse.Telephon = txtTel.Text;
-            ////    objCourse.Team_id = ddl_Team.Text.FirstOrDefault();
-            ////    objCourse.City_id = ddl_City.Text.FirstOrDefault();
-            ////    objCourse.Position_id = ddl_Position.Text.FirstOrDefault();
-            ////    objCourse.Date = DateTime.Now;
+    //}
 
-            ////    ctx.GetTable<UserN>().InsertOnSubmit(objCourse);
-            ////    ctx.SubmitChanges();
+    //protected void gv_Search_RowUpdating(object sender, GridViewUpdateEventArgs e)
+    //{
 
-            ////    this.SearchData();
+    //}
 
-            ////}
-        }
+    //protected void gv_Search_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+    //{
+    //    gv_Search.EditIndex = -1;
+    //    this.SearchData();
+
+    //}
+
+    //protected void btnAdd_Click(object sender, EventArgs e)
+    //{
+    //    DBtestWEBDataContext ctx = new DBtestWEBDataContext();
+
+    //    UserN objCourse = new UserN();
+    //    objCourse.Name = txtName.Text;
+    //    objCourse.Email = txtEmail.Text;
+    //    objCourse.Telephon = txtTel.Text;
+    //    objCourse.Team_id = ddl_Team.Text.FirstOrDefault();
+    //    objCourse.City_id = ddl_City.Text.FirstOrDefault();
+    //    objCourse.Position_id = ddl_Position.Text.FirstOrDefault();
+    //    objCourse.Date = DateTime.Now;
+
+    //    ctx.GetTable<UserN>().InsertOnSubmit(objCourse);
+    //    ctx.SubmitChanges();
+
+    //    this.SearchData();
+
+    //}
+}
     }

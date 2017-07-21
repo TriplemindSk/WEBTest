@@ -20,7 +20,7 @@ namespace WEBTest
 
 
         }
-                
+            /*CALL City name to Show in DropDownList*/    
         public void getCity() {
             DBtestWEBDataContext ctx = new DBtestWEBDataContext();
             Table<City> Citys = ctx.GetTable<City>();
@@ -33,7 +33,7 @@ namespace WEBTest
             ddl_City.DataBind();
         }
 
-
+        /*CALL Team name to Show in DropDownList*/
         public void getTeam() {
 
             DBtestWEBDataContext ctx = new DBtestWEBDataContext();
@@ -49,6 +49,7 @@ namespace WEBTest
 
         }
 
+        /*CALL Position to Show in DropDownList*/
         public void getPosition() {
             DBtestWEBDataContext ctx = new DBtestWEBDataContext();
             Table<Position> Positions = ctx.GetTable<Position>();
@@ -91,13 +92,76 @@ namespace WEBTest
         }
 
 
-        protected void btn_Submit_Click(object sender, EventArgs e)
-        {
-            AddData();
-            MessageBox.Show("ADD Data Complete!" , "ADD" );
-            
+        public void ShoeData() {
+            using (DBtestWEBDataContext ctx = new DBtestWEBDataContext())
+
+                try
+                {
+                    UserN objCourse = new UserN();
+                    objCourse.Name = txt_Name.Text;
+                    objCourse.Email = txt_Email.Text;
+                    objCourse.Telephon = txt_Tel.Text;
+                    objCourse.Team_id = ddl_City.Text.FirstOrDefault();
+                    objCourse.City_id = ddl_City.Text.FirstOrDefault();
+                    objCourse.Position_id = ddl_Position.Text.FirstOrDefault();
+                    objCourse.Date = DateTime.Now;
+
+
+
+                    ctx.GetTable<UserN>().InsertOnSubmit(objCourse);
+
+                    ctx.SubmitChanges();
+                }
+                catch (Exception e)
+                {
+
+                    Console.WriteLine(e.Message);
+
+
+                }
+
+
+
         }
 
+        public void UpdateDATA() {
+
+
+        }
+
+
+
+
+
+
+        protected void btn_Submit_Click(object sender, EventArgs e)
+        {            
+            AddData();
+            MessageBox.Show("ADD Data Complete!" , "ADD" );
+           
+
+        }
+
+        //protected void btn_UpDate_Click(object sender, EventArgs e)
+        //{
+        //    AddData();
+        //    MessageBox.Show("ADD Data Complete!", "ADD");
+
+        //}
+        //protected void btn_UpDateTW_Click(object sender, EventArgs e)
+        //{
+        //    AddData();
+        //    MessageBox.Show("ADD Data Complete!", "ADD");
+
+        //}
+        //protected void btn_Delete_Click(object sender, EventArgs e)
+        //{
+        //    AddData();
+        //    MessageBox.Show("ADD Data Complete!", "ADD");
+
+        //}
+
+            
 
         protected void btnUpload_ServerClick(object sender, EventArgs e)
         {

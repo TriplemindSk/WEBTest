@@ -52,7 +52,8 @@
             OnPageIndexChanging="gv_Search_PageIndexChanging" BackColor="White" BorderColor="#CCCCCC"
             BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
             <Columns>
-                <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+                <asp:HyperLinkField HeaderText="Name" SortExpression="Name"  DataTextField="Name" DataNavigateUrlFormatString="~\Contact.aspx?U_ID={0}" NavigateUrl="~/Contact.aspx" />
+                <%--<asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />--%>
                 <asp:BoundField DataField="Email" HeaderText="E-mail" SortExpression="Email" />
                 <asp:BoundField DataField="Telephon" HeaderText="Telephone" SortExpression="Telephon" />
                 <asp:BoundField DataField="TeamName" HeaderText="Team" SortExpression="TeamName" />

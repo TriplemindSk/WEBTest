@@ -98,6 +98,10 @@
 
     <%-- <asp:Button ID="btn_Submit" runat="server" Text="SUBMIT"  OnClick="btn_Submit_Click"/>--%>
     <input class="btn btn-default" id="btn_Submit" type="submit" value="SUBMIT" onclick="btn_Submit_Click" />
+    <input class="btn btn-default" id="btn_UpDate" type="submit" value="UPDATE" onClick="btn_UpDate_Click" />
+    <input class="btn btn-default" id="btn_UpDateTW" type="submit" value="UPDATE" onclick="btn_UpDateTW_Click" />
+    <input class="btn btn-default" id="btn_Delete" type="submit" value="DELETE" onclick="btn_Delete_Click" />
+    
 
 
 </asp:Content>
